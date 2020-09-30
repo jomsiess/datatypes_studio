@@ -21,11 +21,11 @@ namespace datatypesstudio
 
 
             area = Math.PI * radius * radius;
-            Console.WriteLine("The area of a circle of radius " + radius + " is: " + area);
+            Console.WriteLine("The area of a circle of radius " + radius + " is: " + Math.Round(area, 2));
 
             circumference = 2 * Math.PI * radius;
             diameter = 2 * radius;
-            Console.WriteLine("The circumference of a circle of radius " + radius + " is: " + circumference);
+            Console.WriteLine("The circumference of a circle of radius " + radius + " is: " + Math.Round(circumference, 2));
             Console.WriteLine("The diameter of a circle of radius " + radius + " is: " + diameter);
 
             Console.WriteLine("How many miles to the gallon does your car get?"); 
@@ -33,7 +33,7 @@ namespace datatypesstudio
             mpg = double.Parse(input2);
 
             trip = circumference / mpg;
-            Console.WriteLine("You will use " + trip + " gallons of gas on this trip."); 
+            Console.WriteLine("You will use about " + Math.Round(trip, 2) + " gallon/s of gas on this trip."); 
 
         }
     }
